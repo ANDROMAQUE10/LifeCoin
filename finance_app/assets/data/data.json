@@ -1,0 +1,98 @@
+{    
+    "personId": 12345,
+    "personFirstName": "Nikita",
+    "personLastName": "Gribkov",
+    "Account": [],
+    "dateRegistration": "10.10.2010",
+    "dayOfBirth": "18.10.1995",
+    "age": 26,
+    "login": true,
+    "category": [
+        {
+            "categoryName": "Product",
+            "indexCategory": 1,
+            "transactions": [
+                {
+                    "index": 1,
+                    "transactionsName": "Product",
+                    "transactionDate": "11-09-2021",
+                    "transactionAmount": 14586,
+                    "transactionComment": "Продукты на Новый Год"
+                },
+                {
+                    "index": 2,
+                    "transactionsName": "Product",
+                    "transactionDate": "23-09-2021",
+                    "transactionAmount": 1500,
+                    "transactionComment": "Стейк лосось"
+                },
+                {
+                    "index": 3,
+                    "transactionsName": "Product",
+                    "transactionDate": "24-09-2021",
+                    "transactionAmount": 3500,
+                    "transactionComment": "Корм для кота"
+                }
+            ]
+        },
+        {
+            "categoryName": "HomePay",
+            "indexCategory": 2,
+            "transactions": [
+                {
+                    "index": 1,
+                    "transactionsName": "HomePay",
+                    "transactionDate": "15-09-2021",
+                    "transactionAmount": 15000,
+                    "transactionComment": "Оплата квариры + коммуналка"
+                },
+                {
+                    "index": 2,
+                    "transactionsName": "HomePay",
+                    "transactionDate": "15-10-2021",
+                    "transactionAmount": 15000,
+                    "transactionComment": "Оплата квариры + коммуналка"
+                },
+                {
+                    "index": 3,
+                    "transactionsName": "HomePay",
+                    "transactionDate": "15-11-2021",
+                    "transactionAmount": 15000,
+                    "transactionComment": "Оплата квариры + коммуналка"
+                }
+            ]
+        },
+        {
+            "categoryName": "Transport",
+            "indexCategory": 3,
+            "transactions": [
+                {
+                    "index": 1,
+                    "transactionsName": "Transport",
+                    "transactionDate": "15-09-2021",
+                    "transactionAmount": 2300,
+                    "transactionComment": "Оплата проезда"
+                },
+                {
+                    "index": 2,
+                    "transactionsName": "Transport",
+                    "transactionDate": "15-10-2021",
+                    "transactionAmount": 2300,
+                    "transactionComment": "Оплата проезда"
+                },
+                {
+                    "index": 3,
+                    "transactionsName": "Transport",
+                    "transactionDate": "15-11-2021",
+                    "transactionAmount": 2300,
+                    "transactionComment": "Оплата проезда"
+                }
+            ]
+        }
+    ]
+
+
+
+
+    
+} 

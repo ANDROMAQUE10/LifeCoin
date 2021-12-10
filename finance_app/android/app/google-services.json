@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136824033047",
+    "project_id": "lifecoin-8d1e6",
+    "storage_bucket": "lifecoin-8d1e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136824033047:android:8b5c0e6c42ac3e2d23f152",
+        "android_client_info": {
+          "package_name": "com.example.lifecoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136824033047-scf85g2qat6grv0p8fimergfv6no048o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwwk6gSAjprrVbs9CcytWfWVSPMDxg1YM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136824033047-scf85g2qat6grv0p8fimergfv6no048o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
