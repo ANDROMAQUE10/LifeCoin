@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unused_element, prefer_const_constructors_in_immutables
+// ignore_for_file: prefer_const_constructors, unused_element, prefer_const_constructors_in_immutables, avoid_init_to_null
 
 import 'package:finance_app/components/already_have_an_account_check.dart';
 import 'package:finance_app/components/rounded_button.dart';
@@ -34,7 +34,7 @@ class _HederWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(defaultPadding),
       child: Column(
-        children: [
+        children: const [
           _FormWidget(),
         ],
       ),

@@ -1,2 +1,0 @@
-# LifeCoin
-LifeCoin - finance app
