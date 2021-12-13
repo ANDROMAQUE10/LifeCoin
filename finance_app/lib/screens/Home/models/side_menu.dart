@@ -29,13 +29,15 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             title: "Calendar",
             svgSrc: "assets/icons/menu_tran.svg",
-            press: () {},
+            press: () {
+              Navigator.of(context).pushReplacementNamed('/calendar_screen');
+            },
           ),
           DrawerListTile(
             title: "Transaction",
             svgSrc: "assets/icons/menu_task.svg",
             press: () {
-              Navigator.of(context).pushReplacementNamed('/input_form');
+              Navigator.of(context).pushReplacementNamed('/input_screen');
             },
           ),
           DrawerListTile(

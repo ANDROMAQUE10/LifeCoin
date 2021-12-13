@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const defaultPadding = 16.0;
+const double defaultBorderRadius = 15;
 
 class FinanceAppTheme {
   FinanceAppTheme._();
@@ -8,6 +9,10 @@ class FinanceAppTheme {
   static const Color tabBar = Color(0xFF212332);
   static const Color background = Color(0xFF212332);
   static const Color nearlyDarkBlue = Color(0xFF2633C5);
+  static const Color greenColor = Color(0xFF6bab58);
+
+  static const Color wrapperbackground = Color(0xFFEDEEF2);
+  static const Color wrapperBg = Color(0xFF212121);
 
   static const Color emailPasswordButton = Color(0xFF00ACC1);
   static const Color secondaryColor = Color(0xFF2A2D3E);
