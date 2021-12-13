@@ -43,7 +43,9 @@ class _CalendarWidgetState extends State<CalendarWidget> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: FinanceAppTheme.secondaryColor, borderRadius: BorderRadius.circular(10)),
+        color: FinanceAppTheme.secondaryColor, 
+        borderRadius: BorderRadius.circular(10)
+      ),
       padding: const EdgeInsets.all(10),
       child: Column(
         children: [
@@ -98,29 +100,38 @@ class _CalendarWidgetState extends State<CalendarWidget> {
               onFormatChanged: (result) {},
               daysOfWeekStyle: DaysOfWeekStyle(
                 dowTextFormatter: (date, locale) {
-                  return DateFormat("EEE").format(date).toUpperCase();
+                  return DateFormat("EEE").format(date);
                 },
-                weekendStyle: const TextStyle(fontWeight: FontWeight.bold),
-                weekdayStyle: const TextStyle(fontWeight: FontWeight.bold),
+                weekendStyle: const TextStyle(
+                  fontWeight: FontWeight.w600, 
+                  color: FinanceAppTheme.redColor400 
+                ),
+                weekdayStyle: const TextStyle(
+                  fontWeight: FontWeight.w500
+                ),
               ),
+              weekendDays: const [DateTime.sunday, 6],
+              startingDayOfWeek: StartingDayOfWeek.monday,
+              daysOfWeekHeight: defaultPadding * 3.5,
+              calendarFormat: CalendarFormat.month,
               onPageChanged: (day) {
                 _focusedDay = day;
                 setState(() {});
               },
               calendarStyle: const CalendarStyle(
                 todayDecoration: BoxDecoration(
-                  color: FinanceAppTheme.greenColor,
+                  color: FinanceAppTheme.emailPasswordButton,
                   shape: BoxShape.circle,
                 ),
                 markerDecoration: BoxDecoration(
-                  color: FinanceAppTheme.greenColor,
+                  color: FinanceAppTheme.nearlyBlue,
                   shape: BoxShape.circle,
                 ),
+                weekendTextStyle: TextStyle(color: FinanceAppTheme.redColor400),
+                
               ),
               eventLoader: _eventLoader),
-          const SizedBox(
-            height: 8,
-          ),
+          const SizedBox(height: defaultPadding / 2),
           CalendartList(datas: _selectedDate),
         ],
       ),

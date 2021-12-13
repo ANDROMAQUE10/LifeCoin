@@ -20,7 +20,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
         body: Container(
           padding: const EdgeInsets.all(defaultPadding),
           decoration: const BoxDecoration(
-            color: FinanceAppTheme.secondaryColor,
+            color: FinanceAppTheme.background,
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
           child: Column(

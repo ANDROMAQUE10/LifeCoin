@@ -24,37 +24,37 @@ class CalendarData {
 final List<CalendarData> calendarData = [
   CalendarData(
     name: 'Deniz Çolak',
-    date: DateTime.now().add(const Duration(days: -16, hours: 5)),
+    date: DateTime.now().add(const Duration(days: 0, hours: 5)),
     position: "Software Architect",
     rating: '₽',
   ),
   CalendarData(
     name: 'John Doe',
-    date: DateTime.now().add(const Duration(days: -5, hours: 8)),
+    date: DateTime.now().add(const Duration(days: 0, hours: 8)),
     position: "Software Engineer",
     rating: '₽',
   ),
   CalendarData(
     name: 'Joy Barker',
-    date: DateTime.now().add(const Duration(days: -10, hours: 3)),
+    date: DateTime.now().add(const Duration(days: 0, hours: 3)),
     position: "Solution Architect",
     rating: '\$',
   ),
   CalendarData(
     name: 'Kate Hartley',
-    date: DateTime.now().add(const Duration(days: 6, hours: 6)),
+    date: DateTime.now().add(const Duration(days: 0, hours: 6)),
     position: "Project Manager",
     rating: '\$',
   ),
   CalendarData(
     name: 'Fletcher Robson',
-    date: DateTime.now().add(const Duration(days: -18, hours: 9)),
+    date: DateTime.now().add(const Duration(days: -10, hours: 9)),
     position: "Line Manager",
     rating: '\$',
   ),
   CalendarData(
     name: 'Aldrich Mason',
-    date: DateTime.now().add(const Duration(days: -12, hours: 2)),
+    date: DateTime.now().add(const Duration(days: -10, hours: 2)),
     position: "UI/UX Designer",
     rating: '\$',
   ),

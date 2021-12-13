@@ -8,8 +8,10 @@ import 'text_avatar.dart';
 class CalendarItem extends StatelessWidget {
   final CalendarData calendarItemData;
 
-  const CalendarItem({Key? key, required this.calendarItemData})
-      : super(key: key);
+  const CalendarItem({
+    Key? key, 
+    required this.calendarItemData
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +29,10 @@ class CalendarItem extends StatelessWidget {
               textColor: Colors.white,
               fontSize: 14,
               upperCase: true,
-              numberLetters: 1,
+              numberLetters: 10,
               shape: Shape.Rectangle,
             ),
-            const SizedBox(width: 8),
+            const SizedBox(width: defaultPadding / 2),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -40,7 +42,7 @@ class CalendarItem extends StatelessWidget {
                     fontSize: 14,
                   ),
                 ),
-                const SizedBox(height: 5),
+                const SizedBox(height: defaultPadding / 2),
                 Container(
                   padding: const EdgeInsets.all(4),
                   decoration: BoxDecoration(
@@ -65,16 +67,16 @@ class CalendarItem extends StatelessWidget {
             )
           ],
         ),
-        _Date(date: calendarItemData.getDate())
+        _DateCard(date: calendarItemData.getDate())
       ],
     );
   }
 }
 
-class _Date extends StatelessWidget {
+class _DateCard extends StatelessWidget {
   final String date;
 
-  const _Date({Key? key, required this.date}) : super(key: key);
+  const _DateCard({Key? key, required this.date}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +86,7 @@ class _Date extends StatelessWidget {
         color: FinanceAppTheme.secondaryColor,
         borderRadius: BorderRadius.circular(4),
         border: Border.all(
-          color: FinanceAppTheme.greenColor.withOpacity(0.5),
+          color: FinanceAppTheme.emailPasswordButton.withOpacity(0.5),
         ),
       ),
       child: Text(

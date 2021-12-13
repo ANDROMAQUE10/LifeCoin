@@ -5,7 +5,11 @@ class Wrapper extends StatelessWidget {
   final Widget? title;
   final Widget child;
 
-  const Wrapper({Key? key, this.title, required this.child}) : super(key: key);
+  const Wrapper({
+    Key? key, 
+    this.title, 
+    required this.child
+    }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

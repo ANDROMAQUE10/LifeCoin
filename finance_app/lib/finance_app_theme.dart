@@ -9,7 +9,9 @@ class FinanceAppTheme {
   static const Color tabBar = Color(0xFF212332);
   static const Color background = Color(0xFF212332);
   static const Color nearlyDarkBlue = Color(0xFF2633C5);
-  static const Color greenColor = Color(0xFF6bab58);
+  static const Color greenColor = Color(0xFF81C784);
+  static const Color redColor400 = Color(0xFFef5350);
+  static const Color blueColor = Color(0xFF2633C5);
 
   static const Color wrapperbackground = Color(0xFFEDEEF2);
   static const Color wrapperBg = Color(0xFF212121);
