@@ -1,13 +1,14 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
-
-import 'package:finance_app/screens/Input/components/body.dart';
 import 'package:flutter/material.dart';
 
+import 'models/form_input_widget.dart';
+
 class InputScreen extends StatelessWidget {
+  const InputScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Body(),
+    return const Scaffold(
+      body: FormInpitWidget(),
     );
   }
 }

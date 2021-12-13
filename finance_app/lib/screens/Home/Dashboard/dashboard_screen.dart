@@ -1,14 +1,13 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
-import 'package:finance_app/responsive.dart';
+import 'package:finance_app/backend/services/responsive.dart';
+import 'package:finance_app/finance_app_theme.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
-
-import 'components/Card View/my_account_files.dart';
-import 'components/Recent Transaction Future/recent_transaction_future.dart';
-import 'components/Resent Transaction/recent_transaction.dart';
-import 'components/Storage Details/storage_details.dart';
+import 'models/Header/heder.dart';
+import 'models/Recent Transaction Future/recent_transaction_future.dart';
+import 'models/Resent Transaction/recent_transaction.dart';
+import 'models/Storage Details/storage_details.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override
@@ -26,7 +25,7 @@ class DashboardScreen extends StatelessWidget {
                   flex: 5,
                   child: Column(
                     children: [
-                      MyAccountFiles(),
+                      Heder(),
                       SizedBox(height: defaultPadding),
                       RecentTransactions(),
                       if (Responsive.isMobile(context))
@@ -40,7 +39,6 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 if (!Responsive.isMobile(context))
                   SizedBox(width: defaultPadding),
-                // On Mobile means if the screen is less than 850 we dont want to show it
                 if (!Responsive.isMobile(context))
                   Expanded(
                     flex: 2,

@@ -1,11 +1,12 @@
-// ignore_for_file: use_key_in_widget_constructors
-
-import 'package:finance_app/screens/Welcome/components/body.dart';
 import 'package:flutter/material.dart';
 
+import 'models/body.dart';
+
 class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Body());
+    return const Scaffold(body: Body());
   }
 }
