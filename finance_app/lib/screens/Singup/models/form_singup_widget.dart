@@ -84,14 +84,14 @@ class FormSingUpWidget extends StatelessWidget {
               press: () async {
                 await authService.createUserWithEmailAndPassword(
                     _loginTextController.text, _passwordTextController.text);
-                Navigator.of(context).pushReplacementNamed('/login');
+                Navigator.of(context).pushReplacementNamed('/login_screen');
               },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               login: false,
               press: () {
-                Navigator.of(context).pushReplacementNamed('/login');
+                Navigator.of(context).pushReplacementNamed('/login_screen');
               },
             ),
             OrDivider(),

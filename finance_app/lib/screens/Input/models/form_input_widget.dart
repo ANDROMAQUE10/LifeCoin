@@ -9,7 +9,49 @@ class FormInpitWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Container(
+      child: DefaultTabController(
+        length: 3, 
+        child: Scaffold(
+          appBar: AppBar( 
+            bottom: const TabBar(
+              tabs: [
+                Tab(text: 'Costs'),
+                Tab(text: 'Income'),
+                Tab(text: 'Translation'),
+              ],
+              labelStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              unselectedLabelStyle: TextStyle(fontStyle: FontStyle.normal, fontSize: 18),
+            ),
+          title: const Center(child: Text('Form Input')),
+          backgroundColor: FinanceAppTheme.secondaryColor,
+          ),
+          body: const TabBarView(
+            children: [
+              TabInput(),
+              TabInput(),
+              TabInput(),
+            ]
+          ),
+        ),
+      ),
+    );
+}
+}
+
+class TabInput extends StatelessWidget {
+  const TabInput({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(defaultPadding),
+      decoration: const BoxDecoration(
+        color: FinanceAppTheme.background,
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      child: Container(                  
         padding: const EdgeInsets.all(defaultPadding),
         decoration: const BoxDecoration(
           color: FinanceAppTheme.secondaryColor,
@@ -28,11 +70,12 @@ class FormInpitWidget extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                TextField(),
                 SizedBox(height: defaultPadding),
               ],
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 Text(
                   "Account CT",
@@ -41,48 +84,12 @@ class FormInpitWidget extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
+                SizedBox(height: defaultPadding),
               ],
             ),
           ],
         ),
       ),
     );
-    // SafeArea(
-    //   child: Container(
-    //     padding: const EdgeInsets.all(defaultPadding * 0.8),
-    //     child: Container(
-    //       padding: const EdgeInsets.all(defaultPadding * 3),
-    //       decoration: const BoxDecoration(
-    //         color: FinanceAppTheme.secondaryColor,
-    //         borderRadius: BorderRadius.all(Radius.circular(10)),
-    //       ),
-    //       child: Row(
-    //         crossAxisAlignment: CrossAxisAlignment.start,
-    //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //         children: [
-    //           CalendarWidget(),
-              // Column(
-              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //   children: [
-              //     Text(
-              //       "Account DT",
-              //       style: Theme.of(context).textTheme.subtitle1,
-              //     ),
-              //   ],
-              // ),
-              // Column(
-              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //   children: [
-              //     Text(
-              //       "Account Ct",
-              //       style: Theme.of(context).textTheme.subtitle1,
-              //     ),
-              //   ],
-              // ),
-    //         ]
-    //       ),
-    //     ),
-    //   ),
-    // );
-}
+  }
 }

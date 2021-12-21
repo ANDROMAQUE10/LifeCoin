@@ -47,8 +47,8 @@ class MyApp extends StatelessWidget {
         ),
         routes: {
           '/': (context) => const AuthCheack(),
-          '/login': (context) => const LoginScreen(),
           '/main_screan': (context) => const MainAppHomeScreen(),
+          '/login_screen': (context) => const LoginScreen(),
           '/singup_screen': (context) => SingUpScreen(),
           '/input_screen': (context) => const InputScreen(),
           '/calendar_screen': (context) => CalendarScreen(),

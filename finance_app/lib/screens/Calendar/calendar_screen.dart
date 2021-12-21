@@ -27,13 +27,13 @@ class _CalendarScreenState extends State<CalendarScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               CalendarWidget(),
-              Text(
-                "Employment Details",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              // Text(
+              //   "Employment Details",
+              //   style: TextStyle(
+              //     fontSize: 18,
+              //     fontWeight: FontWeight.w500,
+              //   ),
+              // ),
               SizedBox(height: defaultPadding),
             ],
           ),

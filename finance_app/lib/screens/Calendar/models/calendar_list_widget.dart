@@ -1,3 +1,4 @@
+import 'package:finance_app/finance_app_theme.dart';
 import 'package:flutter/material.dart';
 
 import 'calendar_data.dart';
@@ -30,22 +31,31 @@ class _Empty extends StatelessWidget {
 }
 
 class _List extends StatelessWidget {
+  
   final List<CalendarData> list;
 
   const _List({Key? key, required this.list}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        const Text("Transaction List", style: TextStyle(fontSize: 20)),
-        const SizedBox(height: 8),
-        Wrapper(
-          child: ListCalendarData(calendarData: list),
+
+    Size size = MediaQuery.of(context).size;
+    
+    return SizedBox(
+      height: size.height *0.403,
+      child: ListView(children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Text("Transaction List", style: TextStyle(fontSize: 20)),
+            const SizedBox(height: 8),
+            Wrapper(
+              child: ListCalendarData(calendarData: list),
+            ),
+          ],
         ),
-      ],
+      ]),
     );
   }
 }
