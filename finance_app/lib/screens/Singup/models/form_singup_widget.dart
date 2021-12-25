@@ -3,7 +3,7 @@
 import 'package:finance_app/backend/services/Autentification/auth_service.dart';
 import 'package:finance_app/models/already_have_an_account_check.dart';
 import 'package:finance_app/models/rounded_button.dart';
-import 'package:finance_app/models/rounded_input_field.dart';
+import 'package:finance_app/models/rounded_email_field.dart';
 import 'package:finance_app/models/rounded_password_field.dart';
 import 'package:finance_app/finance_app_theme.dart';
 

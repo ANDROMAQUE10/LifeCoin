@@ -34,6 +34,7 @@ class DashboardScreen extends StatelessWidget {
                       StarageDetails(),
                       SizedBox(height: defaultPadding),
                       RecentTransactionsFuture(),
+                      SizedBox(height: defaultPadding *3.5),
                     ],
                   ),
                 ),

@@ -1,4 +1,7 @@
 import 'package:finance_app/finance_app_theme.dart';
+import 'package:finance_app/screens/Input/models/expense_widget.dart';
+import 'package:finance_app/screens/Input/models/income_widget.dart';
+import 'package:finance_app/screens/Input/models/transaction_widget.dart';
 import 'package:flutter/material.dart';
 
 class FormInpitWidget extends StatelessWidget {
@@ -15,10 +18,11 @@ class FormInpitWidget extends StatelessWidget {
           appBar: AppBar( 
             bottom: const TabBar(
               tabs: [
-                Tab(text: 'Costs'),
+                Tab(text: 'Expense'),
                 Tab(text: 'Income'),
                 Tab(text: 'Translation'),
               ],
+              indicatorColor: FinanceAppTheme.emailPasswordButton,
               labelStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               unselectedLabelStyle: TextStyle(fontStyle: FontStyle.normal, fontSize: 18),
             ),
@@ -27,9 +31,9 @@ class FormInpitWidget extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              TabInput(),
-              TabInput(),
-              TabInput(),
+              ExpenseWidget(),
+              IncomeWidget(),
+              TransactionWidget(),
             ]
           ),
         ),
@@ -38,58 +42,5 @@ class FormInpitWidget extends StatelessWidget {
 }
 }
 
-class TabInput extends StatelessWidget {
-  const TabInput({
-    Key? key,
-  }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(defaultPadding),
-      decoration: const BoxDecoration(
-        color: FinanceAppTheme.background,
-        borderRadius: BorderRadius.all(Radius.circular(10)),
-      ),
-      child: Container(                  
-        padding: const EdgeInsets.all(defaultPadding),
-        decoration: const BoxDecoration(
-          color: FinanceAppTheme.secondaryColor,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                Text(
-                  "Account DT",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                TextField(),
-                SizedBox(height: defaultPadding),
-              ],
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                Text(
-                  "Account CT",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                SizedBox(height: defaultPadding),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+

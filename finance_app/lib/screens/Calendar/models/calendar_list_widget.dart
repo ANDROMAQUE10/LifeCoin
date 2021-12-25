@@ -1,4 +1,3 @@
-import 'package:finance_app/finance_app_theme.dart';
 import 'package:flutter/material.dart';
 
 import 'calendar_data.dart';

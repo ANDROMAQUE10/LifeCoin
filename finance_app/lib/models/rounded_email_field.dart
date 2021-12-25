@@ -2,11 +2,11 @@ import 'package:finance_app/models/text_field_container.dart';
 import 'package:finance_app/finance_app_theme.dart';
 import 'package:flutter/material.dart';
 
-class RoundedInputField extends StatefulWidget {
+class RoundedEmailField extends StatefulWidget {
   final String hintText;
   final IconData icon;
   final ValueChanged<String> onChanged;
-  const RoundedInputField({
+  const RoundedEmailField({
     Key? key,
     this.hintText = 'Your Email',
     this.icon = Icons.person,
@@ -14,10 +14,10 @@ class RoundedInputField extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<RoundedInputField> createState() => _RoundedInputFieldState();
+  State<RoundedEmailField> createState() => _RoundedEmailFieldState();
 }
 
-class _RoundedInputFieldState extends State<RoundedInputField> {
+class _RoundedEmailFieldState extends State<RoundedEmailField> {
   @override
   Widget build(BuildContext context) {
     final TextEditingController _emailController = TextEditingController();

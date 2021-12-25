@@ -19,7 +19,7 @@ class AuthService {
     return _firebaseAuth.authStateChanges().map(_userFormFirebase);
   }
 
-  Future<User?> singInWithEmailAndPassword(
+  Future<User?> signInWithEmailAndPassword(
       String email, String password) async {
     final credential = await _firebaseAuth.signInWithEmailAndPassword(
       email: email, 

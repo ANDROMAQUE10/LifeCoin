@@ -3,6 +3,7 @@
 //* Screens app
 import 'package:finance_app/screens/Home/main_app_home_screen.dart';
 import 'package:finance_app/screens/Login/login_screen.dart';
+import 'backend/services/controllers/menu_controller.dart';
 import 'screens/Calendar/calendar_screen.dart';
 import 'screens/Input/input_screens.dart';
 import 'screens/Singup/singup_screen.dart';
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider<AuthService>(create: (_) => AuthService(),),
+        Provider<AuthService>(create: (_) => AuthService()),
+        ChangeNotifierProvider(create: (context) => MenuController()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

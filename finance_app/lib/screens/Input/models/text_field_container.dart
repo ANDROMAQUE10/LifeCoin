@@ -14,10 +14,10 @@ class TextFieldContainer extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      width: size.width * 0.8,
+      width: size.width * 0.83,
       decoration: BoxDecoration(
-        color: FinanceAppTheme.secondaryColor, 
-        borderRadius: BorderRadius.circular(30),
+        color: FinanceAppTheme.background, 
+        borderRadius: BorderRadius.circular(20),
       ),
       child: child,
     );
