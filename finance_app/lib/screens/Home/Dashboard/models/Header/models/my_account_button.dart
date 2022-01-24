@@ -16,7 +16,7 @@ class MyAccountButton extends StatelessWidget {
             style: TextButton.styleFrom(
               backgroundColor: FinanceAppTheme.secondaryColor,
               padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding * 2,
+                horizontal: defaultPadding * 1.5,
                 vertical:
                     defaultPadding * 0.7,
               ),

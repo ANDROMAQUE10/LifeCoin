@@ -16,7 +16,7 @@ class ProfileButton extends StatelessWidget {
           style: TextButton.styleFrom(
             backgroundColor: FinanceAppTheme.secondaryColor,
             padding: const EdgeInsets.symmetric(
-              horizontal: defaultPadding * 2.5,
+              horizontal: defaultPadding * 2.1,
               vertical: defaultPadding * 0.7,
             ),
           ),

@@ -1,7 +1,6 @@
 import 'package:finance_app/backend/backend.dart';
 import 'package:finance_app/finance_app_theme.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'category_colum.dart';
